@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="En esta pagina podras comprar ricos menu y solicitar que te lo lleven, solo queda disfrutar">
+    <meta name="keywords" content="comida,menu,pedido,delivery">
+    <link rel="stylesheet" href="misestilos.css">
+    <script src="miscomandos.js"></script>
+    <title>Pedidos Ya</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="imagenes/logo.jpeg" alt="logo de la empresa" width="100px">
+            <p>Pedidos Ya</p>
+            <!--aca va el nombre de la empresa-->
+        </div>
+        <nav>
+            <a href="micuenta.html" target="_blank" rel="noopener noreferrer">Mi cuenta</a>
+            <a href="nosotros.html" target="_blank" rel="noopener noreferrer">Sobre nosotros</a>
+            <!--les parece agregar quienes somos y que hacemos ??-->
+            <a href="mipedido.html" target="_blank" rel="noopener noreferrer">Mi pedido</a>
+            <a href="#contacto" target="_blank" rel="noopener noreferrer">Contacto</a>
+            <!--va en el footer-->
+        </nav>
+    </header>
+
+
+
+    <div class="secciones">
+        <!--cada boton llevara abajo hasta donde este la seleccion-->
+        <div><a class="botones-seleccion" href="#menu1">Menu 1</a></div>
+        <div><a class="botones-seleccion" href="#menu2">Menu 2</a></div>
+        <div><a class="botones-seleccion" href="#menu3">Menu 3</a></div>
+        <div><a class="botones-seleccion" href="#menu4">Menu 4</a></div>
+    </div>
+
+    <div id="bienvenido">
+        <!--aca podria ir la foto de presentacion con css, podria ocupar ancho de la pantalla y 200px de alto-->
+        <p>&#128522 bienvenido a pedido ya &#128522</p>
+    </div>
+
+
+    <!--aca va el menu de seleccion-->
+    <div class="menus">
+        <div id="menu1">
+            <p>Hamburguesa:
+                Pan americano con semillas de sésamo,<br>
+                carne picada de primera,feta de queso,<br>
+                rodaja de cebolla,rodaja de tomate </p>
+            <div><img src="" alt="foto de hamburguesa"></div>
+            <p>$ 500</p>
+            <div>
+                <form action="" method="get">
+                    <input type="number" name="cantidad" id="cantidad">
+                    <input type="submit" value="Comprar Menu" id="boton">
+                </form>
+            </div>
+        </div>
+
+        <div id="menu2">
+            <p>Milanesa napolitana:
+                Milanesa grande con una cubierta de queso muzzarela y 3 rodajas de tomate,<br>
+                acompañado con porcion de papas fritas,<br>
+                1 rodaja de limon,2 sobres de aderezos a eleccion</p>
+            <div><img src="" alt="foto de milanesa napolitana"></div>
+            <p>$ 900</p>
+            <div>
+                <form action="" method="get">
+                    <label><input type="radio" name="mayonesa" id="mayonesa">
+                        <p>mayonesa</p>
+                    </label>
+                    <label><input type="radio" name="sabora" id="sabora">
+                        <p>sabora</p>
+                    </label>
+                    <label><input type="radio" name="ketchup" id="ketchup">
+                        <p>ketchup</p>
+                    </label>
+                    <input type="reset" value="corregir eleccion">
+                    <input type="number" name="cantidad" id="cantidad">
+                    <input type="submit" value="Comprar Menu">
+                </form>
+            </div>
+        </div>
+
+        <div id="menu3">
+            <p>pizza grande:
+                pizza casera con salsa de tomate,<br>
+                queso muzzarela,aceitunas,oregano</p>
+            <div><img src="" alt="foto de pizza muzzarela"></div>
+            <p>$ 750</p>
+            <div>
+                <form action="" method="get">
+                    <input type="number" name="cantidad" id="cantidad">
+                    <input type="submit" value="Comprar Menu">
+                </form>
+            </div>
+        </div>
+
+        <div id="menu4">
+            <p>Ravioles:
+                Ravioles con seleccion de sabor,<br>
+                25 gramos de queso rayado,salsa a seleccion
+            </p>
+            <div><img src="" alt="foto de ravioles"></div>
+            <p>$ 950</p>
+            <div>
+                <form action="" method="get">
+                    <label><input type="radio" name="fileto" id="fileto">
+                        <p>salsa fileto</p>
+                    </label>
+                    <label><input type="radio" name="blanca" id="blanca">
+                        <p>salsa blanca</p>
+                    </label>
+                    <input type="reset" value="borrar sabores">
+                    <input type="number" name="cantidad" id="cantidad">
+                    <input type="submit" value="Comprar Menu">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>creado por @colegas</div>
+        <div>copyright 2022 - Todos los derechos reservados</div>
+        <div>11-2233-4455 - pedidoya@gmail.com</div>
+    </footer>
+</body>
+
+</html>

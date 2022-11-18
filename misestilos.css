@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*mantiene el contenido al limite de la pagina, lo ancho y alto se suma automatico con el borde de la caja*/
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "secciones secciones"
+        "bienvenido bienvenido"
+        "menus menus"
+        "footer footer"
+    ;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e7dd53;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div img {
+    width: 100px;
+}
+
+header div p {
+    text-align: center;
+    color: red;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(15, 15, 15);
+}
+
+header a:hover {
+    color: red;
+}
+
+/**/
+
+.secciones {
+    grid-area: secciones;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    border: soli;
+    background-color: lightcoral;
+}
+
+.secciones div {
+    align-content: center;
+    border: soli;
+    font-size: 10mm;
+    padding: 0 30px 0 30px;
+    background-color: red;
+}
+
+.secciones div a {
+    text-align: center;
+    text-decoration: none;
+}
+
+/**/
+
+#bienvenido {
+    grid-area: bienvenido;
+    text-align: center;
+    background:radial-gradient(rgb(57, 16, 243), rgb(91, 104, 109));
+    color: aliceblue;
+    font-size: 10mm;
+}
+
+/**/
+.menus{
+    grid-area: menus;
+    width: 100%;
+    border: solid;
+    display: grid;
+    grid-template-areas:
+        "menu1 menu2"
+        "menu3 menu4";
+        background-color: thistle;
+        gap: 10px;
+}
+#menu1 {
+    grid-area: menu1;
+    margin: auto;
+    background-color: aqua;
+}
+/**/
+#menu2 {
+    grid-area: menu2;
+    margin: auto;
+    background-color: aqua;
+}
+/**/
+#menu3 {
+    grid-area: menu3;
+margin: auto;
+background-color: aqua;
+}
+/**/
+#menu4 {
+    grid-area: menu4;
+margin: auto;
+background-color: aqua;
+}
+/**/
+footer {
+    grid-area: footer;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: blue;
+    font-size: 5mm;
+}
