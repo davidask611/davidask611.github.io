@@ -15,7 +15,7 @@ body {
         "menus menus"
         "footer footer"
     ;
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -66,13 +66,12 @@ header a:hover {
     width: 100%;
     justify-content: space-between;
     display: flex;
-    border: soli;
     background-color: lightcoral;
+    margin: 10px 0 10px 0;
 }
 
 .secciones div {
     align-content: center;
-    border: soli;
     font-size: 10mm;
     padding: 0 30px 0 30px;
     background-color: red;
@@ -91,42 +90,223 @@ header a:hover {
     background:radial-gradient(rgb(57, 16, 243), rgb(91, 104, 109));
     color: aliceblue;
     font-size: 10mm;
+    margin-bottom: 10px;
 }
 
 /**/
 .menus{
     grid-area: menus;
     width: 100%;
-    border: solid;
     display: grid;
-    grid-template-areas:
+    /*grid-template-areas:
         "menu1 menu2"
         "menu3 menu4";
         background-color: thistle;
-        gap: 10px;
+        gap: 10px;*/
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 #menu1 {
-    grid-area: menu1;
-    margin: auto;
+    /*grid-area: menu1;*/
+    width: 100%;
     background-color: aqua;
+}
+#menu1:hover{
+    transform: scale(1.2);
+    transition: 3s;
+    border-radius: 30%;
+    border: dashed;
+    background-color: #e9e06a;
+    color: rgb(42, 20, 243);
+}
+#menu1 p{
+    text-align: center;
+    font: 1.3em sans-serif;
+    width: 80%;
+    margin: 10px auto 0 auto;
+}
+#hamburguesa{
+    background-image: url(imagenes/hamburguesa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+#formulario-hamburguesa{
+    width: 50%;
+    margin: 20px auto 20px;
+    text-align: center;
+}
+#control{
+    color: black;
+    width: 50%;
+    margin-top: 10px;
+    font: 1.2em sans-serif;
+}
+#control:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.2);
+    transition: 1s;
 }
 /**/
 #menu2 {
-    grid-area: menu2;
-    margin: auto;
+    /*grid-area: menu2;*/
+    width: 100%;
     background-color: aqua;
+}
+#menu2:hover{
+    transform: scale(1.2);
+    transition: 3s;
+    border-radius: 30%;
+    border: double;
+    background-color: #db481b;
+    color: rgb(250, 248, 248);
+}
+#menu2 p{
+    text-align: center;
+    font: 1.3em sans-serif;
+    width: 80%;
+    margin: 10px auto 0 auto;
+}
+#milanesa{
+    background-image: url(imagenes/milanesa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+}
+#formulario-milanesa{
+    width: 50%;
+    margin: auto;
+    /*color: red;*/
+}
+#sabores{
+    display: flex;
+}
+#sabores i{
+    margin: auto;
+    font-size: large;
+}
+#controles{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+#controlm{
+    color: black;
+    width: 100%;
+    margin-top: 2px;
+    font: 1.2em sans-serif;
+}
+#controlm:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+    transition: 2s;
 }
 /**/
 #menu3 {
-    grid-area: menu3;
-margin: auto;
-background-color: aqua;
+    /*grid-area: menu3;*/
+    background-color: aqua;
+    width: 100%;
+}
+#menu3:hover{
+    transform: scale(1.2);
+    transition: 3s;
+    transform: translateY(-20%);
+    border-radius: 30%;
+    border: dotted;
+    background-color: #db1b35;
+    color: rgb(250, 248, 248);
+}
+#menu3 p{
+    text-align: center;
+    font: 1.3em sans-serif;
+    min-width: 80%;
+    margin: 20px auto 0 auto;
+}
+#menu3 p:hover{
+    min-width: 80%;
+    margin: 20px auto 0 auto;
+}
+#pizza{
+    background-image: url(imagenes/pizza.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+}
+#formulario-pizza{
+    width: 50%;
+    margin: auto;
+    color: red;
+}
+#formulario-pizza form{
+    width: 50%;
+    margin: auto;
+}
+#controlp{
+    color: black;
+    width: 100%;
+    margin-top: 2px;
+    font: 1.2em sans-serif;
+}
+#controlp:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+    transition: 1s;
 }
 /**/
 #menu4 {
-    grid-area: menu4;
-margin: auto;
-background-color: aqua;
+    /*grid-area: menu4;*/
+    width: 100%;
+    background-color: aqua;
+    padding-top: 20px;
+}
+#menu4:hover{
+    transform: scale(1.2);
+    transition: 3s;
+    transform: translateY(-20%);
+    border-radius: 30%;
+    border: dotted;
+    background-color: #db1b35;
+    color: rgb(250, 248, 248);
+}
+#menu4 p{
+    text-align: center;
+    font: 1.3em sans-serif;
+    width: 80%;
+    margin: 10px auto 0 auto;
+}
+#ravioles{
+    background-image: url(imagenes/ravioles.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+}
+#formulario-ravioles{
+    width: 50%;
+    margin: auto;
+}
+#formulario-ravioles form{
+    width: 100%;
+    margin: auto;
+}
+#controlr{
+    color: black;
+    width: 100%;
+    margin-top: 2px;
+    font: 1.2em sans-serif;
+}
+#controlr:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+    transition: 1s;
 }
 /**/
 footer {

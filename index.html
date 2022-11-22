@@ -16,7 +16,7 @@
 <body>
     <header>
         <div>
-            <img src="imagenes/logo.jpeg" alt="logo de la empresa" width="100px">
+            <img src="imagenes/ya transparente.png" alt="logo de la empresa" width="100px">
             <p>Pedidos Ya</p>
             <!--aca va el nombre de la empresa-->
         </div>
@@ -25,7 +25,7 @@
             <a href="nosotros.html" target="_blank" rel="noopener noreferrer">Sobre nosotros</a>
             <!--les parece agregar quienes somos y que hacemos ??-->
             <a href="mipedido.html" target="_blank" rel="noopener noreferrer">Mi pedido</a>
-            <a href="#contacto" target="_blank" rel="noopener noreferrer">Contacto</a>
+            <a href="#contacto">Contacto</a>
             <!--va en el footer-->
         </nav>
     </header>
@@ -49,77 +49,91 @@
     <!--aca va el menu de seleccion-->
     <div class="menus">
         <div id="menu1">
-            <p>Hamburguesa:
+            <p>Hamburguesa:<br>
                 Pan americano con semillas de sésamo,<br>
                 carne picada de primera,feta de queso,<br>
-                rodaja de cebolla,rodaja de tomate </p>
-            <div><img src="" alt="foto de hamburguesa"></div>
-            <p>$ 500</p>
-            <div>
+                rodaja de cebolla,rodaja de tomate
+            </p>
+            <div id="hamburguesa">
+            </div>
+            <p id="precio">$ 500</p>
+            <div id="formulario-hamburguesa">
                 <form action="" method="get">
-                    <input type="number" name="cantidad" id="cantidad">
-                    <input type="submit" value="Comprar Menu" id="boton">
+                    <input id="control" type="number" name="cantidad" id="cantidad">
+                    <input id="control" type="submit" value="Comprar Menu" id="boton">
                 </form>
             </div>
         </div>
 
         <div id="menu2">
-            <p>Milanesa napolitana:
+            <p>Milanesa napolitana:<br>
                 Milanesa grande con una cubierta de queso muzzarela y 3 rodajas de tomate,<br>
                 acompañado con porcion de papas fritas,<br>
-                1 rodaja de limon,2 sobres de aderezos a eleccion</p>
-            <div><img src="" alt="foto de milanesa napolitana"></div>
-            <p>$ 900</p>
-            <div>
+                1 rodaja de limon,2 sobres de aderezos a eleccion
+            </p>
+            <div id="milanesa">
+
+            </div>
+            <p id="precio">$ 900</p>
+            <div id="formulario-milanesa">
                 <form action="" method="get">
-                    <label><input type="radio" name="mayonesa" id="mayonesa">
-                        <p>mayonesa</p>
+                    <label id="sabores"><input type="radio" name="mayonesa" id="mayonesa">
+                        <i>mayonesa</i>
                     </label>
-                    <label><input type="radio" name="sabora" id="sabora">
-                        <p>sabora</p>
+                    <label id="sabores"><input type="radio" name="sabora" id="sabora">
+                        <i>sabora</i>
                     </label>
-                    <label><input type="radio" name="ketchup" id="ketchup">
-                        <p>ketchup</p>
+                    <label id="sabores"><input type="radio" name="ketchup" id="ketchup">
+                        <i>ketchup</i>
                     </label>
-                    <input type="reset" value="corregir eleccion">
-                    <input type="number" name="cantidad" id="cantidad">
-                    <input type="submit" value="Comprar Menu">
+                    <div id="controles">
+                        <input id="controlm" type="reset" value="corregir eleccion">
+                        <input id="controlm" type="number" name="cantidad">
+                        <input id="controlm" type="submit" value="Comprar Menu">
+                    </div>
                 </form>
             </div>
         </div>
 
         <div id="menu3">
-            <p>pizza grande:
+            <p>pizza grande:<br>
                 pizza casera con salsa de tomate,<br>
-                queso muzzarela,aceitunas,oregano</p>
-            <div><img src="" alt="foto de pizza muzzarela"></div>
-            <p>$ 750</p>
-            <div>
+                queso muzzarela,aceitunas,oregano
+            </p>
+            <div id="pizza">
+
+            </div>
+            <p id="precio">$ 750</p>
+            <div id="formulario-pizza">
                 <form action="" method="get">
-                    <input type="number" name="cantidad" id="cantidad">
-                    <input type="submit" value="Comprar Menu">
+                    <input id="controlp" type="number" name="cantidad" id="cantidad">
+                    <input id="controlp" type="submit" value="Comprar Menu">
                 </form>
             </div>
         </div>
 
         <div id="menu4">
-            <p>Ravioles:
+            <p>Ravioles:<br>
                 Ravioles con seleccion de sabor,<br>
                 25 gramos de queso rayado,salsa a seleccion
             </p>
-            <div><img src="" alt="foto de ravioles"></div>
-            <p>$ 950</p>
-            <div>
+            <div id="ravioles">
+
+            </div>
+            <p id="precio">$ 950</p>
+            <div id="formulario-ravioles">
                 <form action="" method="get">
-                    <label><input type="radio" name="fileto" id="fileto">
-                        <p>salsa fileto</p>
+                    <label id="sabores"><input type="radio" name="fileto" id="fileto">
+                        <i>salsa fileto</i>
                     </label>
-                    <label><input type="radio" name="blanca" id="blanca">
-                        <p>salsa blanca</p>
+                    <label id="sabores"><input type="radio" name="blanca" id="blanca">
+                        <i>salsa blanca</i>
                     </label>
-                    <input type="reset" value="borrar sabores">
-                    <input type="number" name="cantidad" id="cantidad">
-                    <input type="submit" value="Comprar Menu">
+                    <div id="controles">
+                        <input id="controlr" type="reset" value="borrar sabores">
+                        <input id="controlr" type="number" name="cantidad" id="cantidad">
+                        <input id="controlr" type="submit" value="Comprar Menu">
+                    </div>
                 </form>
             </div>
         </div>
