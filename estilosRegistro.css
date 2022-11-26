@@ -3,3 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+.formularios{
+    background-color: blue;
+    width: 30%;
+    margin: 20px auto 0 auto;
+    color: aliceblue;
+    font: 2em sans-serif;
+}
+#formulario-registro{
+    border: solid white;
+    text-align: center;
+
+}
+
+#formulario-sesion{
+    border: solid white;
+    text-align: center;
+
+}

@@ -104,11 +104,6 @@ header a:hover {
     grid-area: menus;
     width: 100%;
     display: grid;
-    /*grid-template-areas:
-        "menu1 menu2"
-        "menu3 menu4";
-        background-color: thistle;
-        gap: 10px;*/
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
@@ -116,9 +111,7 @@ header a:hover {
 }
 
 #menu1 {
-    /*grid-area: menu1;*/
     width: 100%;
-    /*color fondo*/
     background-image: url(imagenes/hamburguesa.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -140,6 +133,7 @@ header a:hover {
     width: 80%;
     margin: 10px auto 0 auto;
 }
+
 #hamburguesa {
     background-image: url(imagenes/hamburguesa.png);
     background-position: center;
@@ -172,9 +166,7 @@ header a:hover {
 
 /**/
 #menu2 {
-    /*grid-area: menu2;*/
     width: 100%;
-    /*color fondo*/
     background-image: url(imagenes/milanesa.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -197,10 +189,10 @@ header a:hover {
     width: 80%;
     margin: 10px auto 0 auto;
 }
+
 #formulario-milanesa {
     width: 50%;
     margin: 50px auto 0 auto;
-    /*color: red;*/
 }
 
 #sabores {
@@ -235,8 +227,6 @@ header a:hover {
 
 /**/
 #menu3 {
-    /*grid-area: menu3;*/
-    /*color fondo*/
     background-image: url(imagenes/sabrosa-pizza-pepperoni-champinones-aceitunas_79782-1976.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -244,6 +234,7 @@ header a:hover {
     width: 100%;
     color: palegreen;
 }
+
 #menu3 p {
     text-align: center;
     font: 1.5em sans-serif;
@@ -256,6 +247,7 @@ header a:hover {
     min-width: 80%;
     margin: 20px auto 0 auto;
 }
+
 #formulario-pizza {
     width: 90%;
     margin: auto;
@@ -279,6 +271,7 @@ header a:hover {
     transform: scale(1.5);
     transition: 1s;
 }
+
 #menu3:hover {
     transform: scale(1.2);
     transition: 3s;
@@ -288,11 +281,10 @@ header a:hover {
     background-color: #db1b35;
     color: #09f014;
 }
+
 /**/
 #menu4 {
-    /*grid-area: menu4;*/
     width: 100%;
-    /*color fondo*/
     padding-top: 20px;
     background-image: url(imagenes/ravioles\ lejos.jpg);
     background-repeat: no-repeat;
@@ -317,6 +309,7 @@ header a:hover {
     margin: 0 auto 0 auto;
     font-weight: bold;
 }
+
 #formulario-ravioles {
     width: 50%;
     margin: auto;
@@ -349,7 +342,8 @@ footer {
     color: rgb(246, 246, 250);
     font-size: 5mm;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: rgb(246, 246, 250);
 }
