@@ -50,19 +50,19 @@
     <!--aca va el menu de seleccion-->
     <div class="menus">
         <div id="menu1">
-            <p>Hamburguesa:<br>
+            <p><span id="nombrehambur">Hamburguesa:</span><br>
                 Pan americano con semillas de sésamo,<br>
                 carne picada de primera,feta de queso,<br>
                 rodaja de cebolla,rodaja de tomate
             </p>
             <div id="hamburguesa">
             </div>
-            <p id="precio">$ 500</p>
+            <p id="precio">$<span id="valorhambur">500</span></p>
             <div id="formulario-hamburguesa">
                 <form action="" method="get">
-                    <input id="control" type="number" name="cantidad" id="cantidad">
-                    <input id="control" type="submit" value="Comprar Menu" id="boton">
+                    <input  class="control" type="number" name="cantidad" id="cantidad">
                 </form>
+                <button onclick="comprarMenu1()">Comprar menu</button>
             </div>
         </div>
 
@@ -88,9 +88,9 @@
                         <i>ketchup</i>
                     </label>
                     <div id="controles">
-                        <input id="controlm" type="reset" value="corregir eleccion">
-                        <input id="controlm" type="number" name="cantidad">
-                        <input id="controlm" type="submit" value="Comprar Menu">
+                        <input class="controlm" type="reset" value="corregir eleccion">
+                        <input class="controlm" type="number" name="cantidad">
+                        <input class="controlm" type="submit" value="Comprar Menu">
                     </div>
                 </form>
             </div>
@@ -107,8 +107,8 @@
             <p id="precio">$ 750</p>
             <div id="formulario-pizza">
                 <form action="" method="get">
-                    <input id="controlp" type="number" name="cantidad" id="cantidad">
-                    <input id="controlp" type="submit" value="Comprar Menu">
+                    <input class="controlp" type="number" name="cantidad" id="cantidad">
+                    <input class="controlp" type="submit" value="Comprar Menu">
                 </form>
             </div>
         </div>
@@ -131,9 +131,9 @@
                         <i>salsa blanca</i>
                     </label>
                     <div id="controles">
-                        <input id="controlr" type="reset" value="borrar sabores">
-                        <input id="controlr" type="number" name="cantidad" id="cantidad">
-                        <input id="controlr" type="submit" value="Comprar Menu">
+                        <input class="controlr" type="reset" value="borrar sabores">
+                        <input class="controlr" type="number" name="cantidad" id="cantidad">
+                        <input class="controlr" type="submit" value="Comprar Menu">
                     </div>
                 </form>
             </div>

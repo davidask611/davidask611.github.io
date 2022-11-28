@@ -1,23 +1,54 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.formularios{
-    background-color: blue;
-    width: 30%;
-    margin: 20px auto 0 auto;
-    color: aliceblue;
-    font: 2em sans-serif;
+body {
+  background-image: url(/imagenes/verdura.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#formulario-registro{
-    border: solid white;
-    text-align: center;
-
+h1 {
+  color: rgb(6, 6, 252);
+}
+.formularios {
+  width: 60%;
+  margin: 50px auto 0 auto;
+}
+#formulario-registro {
+  text-align: center;
+  margin-top: 30px;
+}
+#formulario-registro form {
+  width: 50%;
+  margin: auto;
+}
+#formulario-registro form input {
+  width: 100%;
+  margin-top: 10px;
+  font: 1.2em italic;
+  color: rgb(52, 7, 250);
+}
+#formulario-registro form a {
+  display: block;
+  text-decoration: none;
+  font: 1.3em sans-serif;
+  margin-top: 20px;
+  color: chartreuse;
 }
 
-#formulario-sesion{
-    border: solid white;
-    text-align: center;
-
+#formulario-sesion {
+  text-align: center;
+  margin-top: 30px;
+}
+#formulario-sesion form {
+  width: 50%;
+  margin: auto;
+}
+#formulario-sesion form input {
+  width: 100%;
+  margin-top: 10px;
+  font: 1.2em italic;
+  color: rgb(52, 7, 250);
 }
