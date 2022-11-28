@@ -1,5 +1,5 @@
 function comprarMenu1() {
-  let nombrehambur = document.getElementByid("nombrehambur").innerhtml;
+  let nombrehambur = document.getElementById("nombrehambur").innerhtml;
   let valorhambur = parseInt(document.getElementById("valorhambur").innerHTML);
   let cantmenu1 = parseInt(document.getElementById("cantidad").value);
   console.log(valorhambur)
