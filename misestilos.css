@@ -122,8 +122,6 @@ header a:hover {
   transform: scale(1.1);
   transition: 1s;
   border-radius: 30%;
-  background-color: #e9e06a;
-  color: rgb(25, 0, 252);
 }
 
 #menu1 p {
@@ -132,16 +130,6 @@ header a:hover {
   width: 80%;
   margin: 10px auto 0 auto;
 }
-#hamburguesa {
-  background-image: url(imagenes/hamburguesa.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-
 #formulario-hamburguesa {
   width: 50%;
   margin: 50px auto 0 auto;
@@ -170,7 +158,6 @@ header a:hover {
   transform: scale(1.1);
   transition: 1s;
   border-radius: 30%;
-  color: rgb(20, 35, 245);
   font-weight: bold;
 }
 
@@ -186,17 +173,12 @@ header a:hover {
   margin: auto;
   text-align: center;
 }
-
-#sabores {
-  display: flex;
+#opciones{
+  width: 80%;
+  margin: auto;
+  color: white;
+  font: 1.2em sans-serif;
 }
-
-#sabores i {
-  margin: 2px auto 2px auto;
-  font-size: x-large;
-  color: rgb(8, 8, 8);
-}
-
 #controles {
   width: 100%;
   margin: auto;
@@ -269,7 +251,7 @@ header a:hover {
   background-image: url(imagenes/ravioles\ lejos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: rgb(14, 14, 15);
+  color: rgb(27, 10, 253);
 }
 
 #menu4:hover {
@@ -278,7 +260,6 @@ header a:hover {
   transform: translateY(-10%);
   border-radius: 30%;
   border: dotted;
-  background-color: #db1b35;
   font-weight: bold;
 }
 
@@ -299,7 +280,12 @@ header a:hover {
   width: 100%;
   margin: 15px auto 10px auto;
 }
-
+#opciones{
+  width: 80%;
+  margin: auto;
+  color: white;
+  font: 1.2em sans-serif;
+}
 .controlr {
   color: black;
   width: 100%;

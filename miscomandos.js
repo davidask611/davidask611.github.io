@@ -43,11 +43,23 @@ function comprarMenu2() {
   let nombMenu2 = document.getElementById("nombreMenu2").innerHTML;
   let precioMenu2 = parseInt(document.getElementById("precioMenu2").innerHTML);
   let cantMenu2 = parseInt(document.getElementById("cant2").value);
+  let aderezos = document.getElementById("aderezos").value;
+  if (aderezos == "sinAderezo") {
+    aderezos = "sin aderezo";
+  } else if (aderezos == "Mayonesa") {
+    aderezos = "con mayonesa";
+  } else if (aderezos == "Sabora") {
+    aderezos = "con sabora";
+  } else {
+    aderezos = "con ketchup";
+  }
   let confirmado = confirm(
     "Tu orden de " +
       cantMenu2 +
       " " +
       nombMenu2 +
+      " " +
+      aderezos +
       " tiene un valor de " +
       precioMenu2 * cantMenu2
   );
@@ -61,6 +73,8 @@ function comprarMenu2() {
       cantMenu2 +
       " " +
       nombMenu2 +
+      " " +
+      aderezos +
       " tiene un valor de " +
       precioMenu2 * cantMenu2;
     let pedidoAgre = document.getElementById("nuevoPedido");
@@ -101,11 +115,20 @@ function comprarMenu4() {
   let nombMenu4 = document.getElementById("nombreMenu4").innerHTML;
   let precioMenu4 = parseInt(document.getElementById("precioMenu4").innerHTML);
   let cantMenu4 = parseInt(document.getElementById("cant4").value);
+  let sabores = document.getElementById("sabores").value;
+  if (sabores == "sinSalsa") {
+    sabores = "sin salsa";
+  } else if (sabores == "Salsabl") {
+    sabores = "con salsa blanca";
+  } else sabores = "con salsa fileto";
+
   let confirmado = confirm(
     "Tu orden de " +
       cantMenu4 +
       " platos de " +
       nombMenu4 +
+      " " +
+      sabores +
       " tiene un valor de " +
       precioMenu4 * cantMenu4
   );
@@ -115,12 +138,8 @@ function comprarMenu4() {
   if (confirmado) {
     let compraConfirmada = document.createElement("p");
     compraConfirmada.innerHTML =
-      "Tu orden de " +
-      cantMenu4 +
-      " " +
-      nombMenu4 +
-      " tiene un valor de " +
-      precioMenu4 * cantMenu4;
+      "Tu orden de " + cantMenu4 + " " + nombMenu4 + " " + sabores + " ";
+    " tiene un valor de " + precioMenu4 * cantMenu4;
     let pedidoAgre = document.getElementById("nuevoPedido");
     pedidoAgre.appendChild(compraConfirmada);
   }

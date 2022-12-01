@@ -77,17 +77,16 @@
             <p id="precio">$ <span id="precioMenu2">500</span></p>
             <div id="formulario-milanesa">
                 <form>
-                    <label id="sabores"><input type="radio" name="mayonesa" id="mayonesa">
-                        <i>mayonesa</i>
-                    </label>
-                    <label id="sabores"><input type="radio" name="sabora" id="sabora">
-                        <i>sabora</i>
-                    </label>
-                    <label id="sabores"><input type="radio" name="ketchup" id="ketchup">
-                        <i>ketchup</i>
-                    </label>
+                    <div id="opciones">
+                        <label for="aderezos">Selecciona tu aderezo</label>
+                            <select name="aderezos" id="aderezos">
+                            <option value="sinAderezo">Sin aderezo</option>
+                            <option value="Mayonesa">Mayonesa</option>
+                            <option value="Sabora">Sabora</option>
+                            <option value="Ketchup">Ketchup</option>
+                        </select>
+                    </div>
                     <div id="controles">
-                        <input class="controlm" type="reset" value="corregir eleccion">
                         <input class="controlm" type="number" name="cantidad" id="cant2">
                     </div>
                 </form>
@@ -123,14 +122,15 @@
             <p id="precio">$ <span id="precioMenu4">950</span></p>
             <div id="formulario-ravioles">
                 <form>
-                    <label id="sabores"><input type="radio" name="fileto" id="fileto">
-                        <i>salsa fileto</i>
-                    </label>
-                    <label id="sabores"><input type="radio" name="blanca" id="blanca">
-                        <i>salsa blanca</i>
-                    </label>
+                    <div id="opciones">
+                        <label for="sabores">Selecciona un sabor</label>
+                        <select name="sabores" id="sabores">
+                            <option value="sinSalsa">Sin salsa</option>
+                            <option value="Salsabl">Salsa blanca</option>
+                            <option value="Salsafi">Salsa fileto</option>
+                        </select>
+                    </div>
                     <div id="controles">
-                        <input class="controlr" type="reset" value="borrar sabores">
                         <input class="controlr" type="number" name="cantidad" id="cant4">
                     </div>
                 </form>
