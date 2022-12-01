@@ -52,3 +52,10 @@ h1 {
   font: 1.2em italic;
   color: rgb(52, 7, 250);
 }
+
+#button{
+  width: 50%;
+  margin-top: 10px;
+  font: 1.2em sans-serif;
+  color: rgb(52, 7, 250);
+}

@@ -9,7 +9,6 @@
         content="En esta pagina podras comprar ricos menu y solicitar que te lo lleven, solo queda disfrutar">
     <meta name="keywords" content="comida,menu,pedido,delivery">
     <link rel="stylesheet" href="misestilos.css">
-    <script src="miscomandos.js"></script>
     <title>Pedidos Ya</title>
 </head>
 
@@ -25,7 +24,7 @@
             <a href="micuenta.html" target="_blank" rel="noopener noreferrer">Mi cuenta</a>
             <a href="nosotros.html" target="_blank" rel="noopener noreferrer">Sobre nosotros</a>
             <!--les parece agregar quienes somos y que hacemos ??-->
-            <a href="mipedido.html" target="_blank" rel="noopener noreferrer">Mi pedido</a>
+            <a href="#cajaPedido">Mi pedido</a>
             <a href="#contacto">Contacto</a>
             <!--va en el footer-->
         </nav>
@@ -50,24 +49,24 @@
     <!--aca va el menu de seleccion-->
     <div class="menus">
         <div id="menu1">
-            <p><span id="nombrehambur">Hamburguesa:</span><br>
+            <p><span id="nombreMenu1">Hamburguesa:</span><br>
                 Pan americano con semillas de sésamo,<br>
                 carne picada de primera,feta de queso,<br>
                 rodaja de cebolla,rodaja de tomate
             </p>
             <div id="hamburguesa">
             </div>
-            <p id="precio">$<span id="valorhambur">500</span></p>
+            <p id="precio">$<span id="precioMenu1">500</span></p>
             <div id="formulario-hamburguesa">
-                <form action="" method="get">
-                    <input  class="control" type="number" name="cantidad" id="cantidad">
+                <form>
+                    <input  class="control" type="number" name="cantidad" id="cant1">
                 </form>
                 <button onclick="comprarMenu1()">Comprar menu</button>
             </div>
         </div>
 
         <div id="menu2">
-            <p>Milanesa napolitana:<br>
+            <p><span id="nombreMenu2">Milanesa napolitana</span>:<br>
                 Milanesa grande con una cubierta de queso muzzarela y 3 rodajas de tomate,<br>
                 acompañado con porcion de papas fritas,<br>
                 1 rodaja de limon,2 sobres de aderezos a eleccion
@@ -75,9 +74,9 @@
             <div id="milanesa">
 
             </div>
-            <p id="precio">$ 900</p>
+            <p id="precio">$ <span id="precioMenu2">500</span></p>
             <div id="formulario-milanesa">
-                <form action="" method="get">
+                <form>
                     <label id="sabores"><input type="radio" name="mayonesa" id="mayonesa">
                         <i>mayonesa</i>
                     </label>
@@ -89,41 +88,41 @@
                     </label>
                     <div id="controles">
                         <input class="controlm" type="reset" value="corregir eleccion">
-                        <input class="controlm" type="number" name="cantidad">
-                        <input class="controlm" type="submit" value="Comprar Menu">
+                        <input class="controlm" type="number" name="cantidad" id="cant2">
                     </div>
                 </form>
+                <button onclick="comprarMenu2()">Comprar menu</button>
             </div>
         </div>
 
         <div id="menu3">
-            <p>pizza grande:<br>
+            <p><span id="nombreMenu3">Pizza grande</span>:<br>
                 pizza casera con salsa de tomate,<br>
                 queso muzzarela,aceitunas,oregano
             </p>
             <div id="pizza">
 
             </div>
-            <p id="precio">$ 750</p>
+            <p id="precio">$ <span id="precioMenu3">750</span></p>
             <div id="formulario-pizza">
-                <form action="" method="get">
-                    <input class="controlp" type="number" name="cantidad" id="cantidad">
-                    <input class="controlp" type="submit" value="Comprar Menu">
+                <form>
+                    <input class="controlp" type="number" name="cantidad" id="cant3">
                 </form>
+                <button onclick="comprarMenu3()">Comprar menu</button>
             </div>
         </div>
 
         <div id="menu4">
-            <p>Ravioles:<br>
+            <p><span id="nombreMenu4">Ravioles</span>:<br>
                 Ravioles con seleccion de sabor,<br>
                 25 gramos de queso rayado,salsa a seleccion
             </p>
             <div id="ravioles">
 
             </div>
-            <p id="precio">$ 950</p>
+            <p id="precio">$ <span id="precioMenu4">950</span></p>
             <div id="formulario-ravioles">
-                <form action="" method="get">
+                <form>
                     <label id="sabores"><input type="radio" name="fileto" id="fileto">
                         <i>salsa fileto</i>
                     </label>
@@ -132,20 +131,25 @@
                     </label>
                     <div id="controles">
                         <input class="controlr" type="reset" value="borrar sabores">
-                        <input class="controlr" type="number" name="cantidad" id="cantidad">
-                        <input class="controlr" type="submit" value="Comprar Menu">
+                        <input class="controlr" type="number" name="cantidad" id="cant4">
                     </div>
                 </form>
+                <button onclick="comprarMenu4()">Comprar menu</button>
             </div>
         </div>
     </div>
 
+    <div id="cajaPedido">
+        <h2>Mi pedido</h2>
+        <p id="nuevoPedido"></p>
+    </div>
 
     <footer>
         <div>creado por Davidask611 &#128155</div>
         <div>copyright 2022 - Todos los derechos reservados</div>
         <div id="contacto">11-2233-4455 - <a href=»mailto:correo@correo.com»>pedidoya@gmail.com</a></div>
     </footer>
+    <script src="miscomandos.js"></script>
 </body>
 
 </html>
